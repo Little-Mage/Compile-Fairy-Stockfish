@@ -1,2 +1,2 @@
-# Fairy-Stockfish-latest
-bmi2 exe Compiled with mingw64.
+# Compile Fairy-Stockfish-latest
+bmi2 with mingw64.
