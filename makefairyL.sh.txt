@@ -1,5 +1,5 @@
 #!/bin/bash
-# makefairy.sh
+# makefairyL.sh.txt
 
 # install packages if not already installed
 unzip -v &> /dev/null || pacman -S --noconfirm unzip
