@@ -1,2 +1,2 @@
 # Fairy-Stockfish-latest
-Compile scripts for large board and non-large bmi2 with mingw64.
+Compile scripts of large board and non-large bmi2 for mingw64.
