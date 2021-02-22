@@ -1,5 +1,5 @@
 #!/bin/bash
-# makefairy.sh
+# makefairy.sh.txt
 
 # install packages if not already installed
 unzip -v &> /dev/null || pacman -S --noconfirm unzip
@@ -7,7 +7,7 @@ make -v &> /dev/null || pacman -S --noconfirm make
 g++ -v &> /dev/null || pacman -S --noconfirm mingw-w64-x86_64-gcc
 
 # download the Fairy-Stockfish source code
-wget https://github.com/ianfab/Fairy-Stockfish/archive/master.zip
+wget -O master.zip https://github.com/ianfab/Fairy-Stockfish/archive/master.zip
 unzip master.zip
 cd Fairy-Stockfish-master/src
 
@@ -16,8 +16,8 @@ arch_cpu=x86-64-bmi2
 
 # build the fastest stockfish executable
 # delete CXXFLAGS='-march=native' if you want distribute the executable
-CXXFLAGS='-march=native' make -j profile-build ARCH=${arch_cpu} COMP=mingw
+make -j profile-build ARCH=${arch_cpu} COMP=mingw
 strip stockfish.exe
-mv stockfish.exe ../../Fairy_${arch_cpu}.exe
+mv stockfish.exe ../../stockfish_${arch_cpu}.exe
 make clean 
 cd
