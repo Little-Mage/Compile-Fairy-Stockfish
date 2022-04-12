@@ -1,7 +1,7 @@
 # Compile Fairy-Stockfish
 MSYS2 compile scripts of large-board and non-large bmi2.
 
-Download install MSYS2 https://www.msys2.org/ Make sure you install the package mingw-w64 GCC 
+Download install MSYS2 https://www.msys2.org/
 
 Citations:
 Fairy-Stockfish compiling instructions: https://github.com/ianfab/Fairy-Stockfish/wiki/Compiling-Fairy-Stockfish
