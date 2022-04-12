@@ -11,13 +11,12 @@ wget -O master.zip https://github.com/ianfab/Fairy-Stockfish/archive/master.zip
 unzip master.zip
 cd Fairy-Stockfish-master/src
 
-# Build only the bmi2 executable
+# Build bmi2 executable
 arch_cpu=x86-64-bmi2
 
-# build the fastest stockfish executable
 # delete CXXFLAGS='-march=native' if you want distribute the executable
-make -j profile-build ARCH=${arch_cpu} COMP=mingw largeboards=yes
-strip stockfish.exe
-mv stockfish.exe ../../Fairy-Stockfish LB_${arch_cpu}.exe
-make clean 
+make profile-build ARCH=${arch_cpu} COMP=mingw largeboards=yes
+make strip
+mv stockfish.exe ../../Fairy-Stockfish_${arch_cpu}.exe
+make clean
 cd
