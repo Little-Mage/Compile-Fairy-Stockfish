@@ -7,9 +7,3 @@ Citations:
 Fairy-Stockfish compiling instructions: https://github.com/ianfab/Fairy-Stockfish/wiki/Compiling-Fairy-Stockfish
 
 Normal Stockfish (base) compiling script: https://github.com/glinscott/fishtest/wiki/Building-Stockfish-on-Windows#using-other-mingw-w64-with-msys2
-
-| animal | weight | color  |
-|--------|-------:|:------:|
-| dog    | 30lb   | tan    |
-| dog    | 85lb   | black  |
-| cat    | 18lb   | calico |
